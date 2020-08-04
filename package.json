@@ -1,0 +1,31 @@
+{
+  "name": "conekta-oxxo-api",
+  "version": "1.0.0",
+  "description": "A rest api to use conekta",
+  "main": "index.js",
+  "author": "Jean Mayorga",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf ./build",
+    "prebuild": "yarn clean",
+    "build": "tsc",
+    "dev": "tsc-watch --onSuccess \"node build/app.js\"",
+    "dev:ts": "ts-node-dev --respawn src/app.ts",
+    "format": "prettier --write \"src/**/*.ts\" --write \"package.json\"",
+    "format:check": "prettier --check \"src/**/*.ts\" --check \"package.json\""
+  },
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "@types/http-errors": "^1.8.0",
+    "conekta": "^4.0.1",
+    "envalid": "^6.0.2",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "prettier": "^2.0.5",
+    "tsc-watch": "^4.2.9",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.56"
+  }
+}
