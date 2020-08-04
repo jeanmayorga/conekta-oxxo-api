@@ -33,6 +33,10 @@ Your app is ready to be deployed!
 
 `/POST /createOrder`
 
+### Webhook
+
+`/POST /webhook`
+
 ## Directory layout
 
 ```
@@ -41,6 +45,7 @@ Your app is ready to be deployed!
 ├── src/                    <-- Application components and source code
      ├── api/               <-- Api Folders
      │    ├── conekta       <-- Conekta api folder
+     │    ├── webhook       <-- Webhook Conekta api folder
      ├── libs/              <-- Libraries for backend
      ├── utils/             <-- Utils config for backend
 ```

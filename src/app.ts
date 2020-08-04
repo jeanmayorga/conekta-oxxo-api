@@ -1,6 +1,7 @@
 import express from "express";
 
 import { conektaApi } from "./api/conekta";
+import { conektaWebhookApi } from "./api/webhook";
 
 export function init() {
   const app = express();
@@ -8,6 +9,7 @@ export function init() {
   app.use(express.json());
 
   app.use(conektaApi);
+  app.use(conektaWebhookApi);
 
   return { app };
 }
