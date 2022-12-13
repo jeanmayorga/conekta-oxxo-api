@@ -19,7 +19,7 @@
     "@types/http-errors": "^1.8.0",
     "conekta": "^4.0.1",
     "envalid": "^6.0.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "http-errors": "^1.8.0",
     "prettier": "^2.0.5",
     "tsc-watch": "^4.2.9",
